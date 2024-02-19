@@ -1,0 +1,545 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Hypernetworks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{DavidHaHyperNetworks,
+	doi = {10.48550/ARXIV.1609.09106},
+	url = {https://arxiv.org/abs/1609.09106},
+	author = {Ha, David and Dai, Andrew and Le, Quoc V.},
+	keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+	title = {HyperNetworks},
+	publisher = {arXiv},
+	year = {2016},
+}
+
+@article{VonOswaldContinualLearningWithHypernetworks,
+	author    = {Johannes von Oswald and
+	Christian Henning and
+	Jo{\~{a}}o Sacramento and
+	Benjamin F. Grewe},
+	title     = {Continual learning with hypernetworks},
+	journal   = {CoRR},
+	volume    = {abs/1906.00695},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1906.00695},
+	eprinttype = {arXiv},
+	eprint    = {1906.00695},
+	timestamp = {Thu, 13 Jun 2019 13:36:00 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1906-00695.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+% short review of HNs and papers that apply it e.g. used kinds of types
+@misc{chauhan2023briefHypernetworks,
+	title={A Brief Review of Hypernetworks in Deep Learning}, 
+	author={Vinod Kumar Chauhan and Jiandong Zhou and Ping Lu and Soheila Molaei and David A. Clifton},
+	year={2023},
+	eprint={2306.06955},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   CLFD -> Sayantan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{AuddyContinualLearningFromDemonstrationOfRoboticSkills,
+title={Continual learning from demonstration of robotics skills},
+author={Auddy, Sayantan and Hollenstein, Jakob and Saveriano, Matteo and Rodr{\'\i}guez-S{\'a}nchez, Antonio and Piater, Justus},
+journal={Robotics and Autonomous Systems},
+volume={165},
+pages={104427},
+year={2023},
+publisher={Elsevier}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Initializer Algorithms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{ChangFL20WeightInit,
+	author    = {Oscar Chang and
+	Lampros Flokas and
+	Hod Lipson},
+	title     = {Principled Weight Initialization for Hypernetworks},
+	booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
+	Addis Ababa, Ethiopia, April 26-30, 2020},
+	publisher = {OpenReview.net},
+	year      = {2020},
+	url       = {https://openreview.net/forum?id=H1lma24tPB},
+	timestamp = {Thu, 07 May 2020 17:11:48 +0200},
+	biburl    = {https://dblp.org/rec/conf/iclr/ChangFL20.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{svensson2022robust,
+title={Robust task-specific adaption of drug-target interaction models},
+author={Svensson, Emma and Hoedt, Pieter-Jan and Hochreiter, Sepp and Klambauer, G\"{u}nter},
+booktitle={NeurIPS 2022 3d AI for Science Workshop},
+year={2022},
+url={https://openreview.net/forum?id=dIX34JWnIAL}
+}
+
+@inproceedings{he2015delving,
+title={Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+booktitle={Proceedings of the IEEE international conference on computer vision},
+pages={1026--1034},
+year={2015}
+}
+%% -> kaiming performance testing
+@misc{russakovsky2015imagenet,
+	title={ImageNet Large Scale Visual Recognition Challenge}, 
+	author={Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+	year={2015},
+	eprint={1409.0575},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV}
+}
+
+
+@InProceedings{xavierInit,
+title = 	 {Understanding the difficulty of training deep feedforward neural networks},
+author = 	 {Glorot, Xavier and Bengio, Yoshua},
+booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+pages = 	 {249--256},
+year = 	 {2010},
+editor = 	 {Teh, Yee Whye and Titterington, Mike},
+volume = 	 {9},
+series = 	 {Proceedings of Machine Learning Research},
+address = 	 {Chia Laguna Resort, Sardinia, Italy},
+month = 	 {13--15 May},
+publisher =    {PMLR},
+pdf = 	 {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf},
+url = 	 {https://proceedings.mlr.press/v9/glorot10a.html},
+abstract = 	 {Whereas before 2006 it appears that deep multi-layer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future.  We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1.  Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence.}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Continual Learning
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% review of cl practices
+@article{parisi,
+	author    = {German Ignacio Parisi and
+	Ronald Kemker and
+	Jose L. Part and
+	Christopher Kanan and
+	Stefan Wermter},
+	title     = {Continual Lifelong Learning with Neural Networks: {A} Review},
+	journal   = {CoRR},
+	volume    = {abs/1802.07569},
+	year      = {2018},
+	url       = {http://arxiv.org/abs/1802.07569},
+	eprinttype = {arXiv},
+	eprint    = {1802.07569},
+	timestamp = {Mon, 13 Aug 2018 16:46:54 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1802-07569.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+% deep generative replay; using 2 networks for computer vision/classification
+@article{DBLP:journals/corr/ShinLKK17,
+author       = {Hanul Shin and
+Jung Kwon Lee and Jaehong Kim and Jiwon Kim},
+title        = {Continual Learning with Deep Generative Replay},
+journal      = {CoRR},
+volume       = {abs/1705.08690},
+year         = {2017},
+url          = {http://arxiv.org/abs/1705.08690},
+eprinttype    = {arXiv},
+eprint       = {1705.08690},
+timestamp    = {Fri, 16 Dec 2022 08:18:50 +0100},
+biburl       = {https://dblp.org/rec/journals/corr/ShinLKK17.bib},
+bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% synaptic intelligence -> cl trough special metrics which determine how much the weight is allowed to change
+@misc{zenke2017continual,
+title={Continual Learning Through Synaptic Intelligence}, 
+author={Friedemann Zenke and Ben Poole and Surya Ganguli},
+year={2017},
+eprint={1703.04200},
+archivePrefix={arXiv},
+primaryClass={cs.LG}
+}
+
+% Progressive Neural Networks (new nn for each task to be learned; very good rememberance, bad at reusing learned (cant be used at all), high in parameter count)
+@misc{rusu2022progressive,
+	title={Progressive Neural Networks}, 
+	author={Andrei A. Rusu and Neil C. Rabinowitz and Guillaume Desjardins and Hubert Soyer and James Kirkpatrick and Koray Kavukcuoglu and Razvan Pascanu and Raia Hadsell},
+	year={2022},
+	eprint={1606.04671},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG}
+}
+
+% MAS -> estimate importance of parameters; when learning new task add regularizer (penalizer) that makes changes to weights less drastic
+@misc{aljundi2018memory,
+	title={Memory Aware Synapses: Learning what (not) to forget}, 
+	author={Rahaf Aljundi and Francesca Babiloni and Mohamed Elhoseiny and Marcus Rohrbach and Tinne Tuytelaars},
+	year={2018},
+	eprint={1711.09601},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV}
+}
+
+% deep gan for robotics
+@INPROCEEDINGS{gao2021,
+	author={Gao, Chongkai and Gao, Haichuan and Guo, Shangqi and Zhang, Tianren and Chen, Feng},
+	booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+	title={CRIL: Continual Robot Imitation Learning via Generative and Prediction Model}, 
+	year={2021},
+	volume={},
+	number={},
+	pages={6747-5754},
+	abstract={Imitation learning (IL) algorithms have shown promising results for robots to learn skills from expert demonstrations. However, they need multi-task demonstrations to be provided at once for acquiring diverse skills, which is difficult in real world. In this work we study how to realize continual imitation learning ability that empowers robots to continually learn new tasks one by one, thus reducing the burden of multitask IL and accelerating the process of new task learning at the same time. We propose a novel trajectory generation model that employs both a generative adversarial network and a dynamics-aware prediction model to generate pseudo trajectories from all learned tasks in the new task learning process. Our experiments on both simulation and real-world manipulation tasks demonstrate the effectiveness of our method.},
+	keywords={},
+	doi={10.1109/IROS51168.2021.9636069},
+	ISSN={2153-0866},
+	month={Sep.},}
+
+@article{Kirkpatrick_2017,
+	title={Overcoming catastrophic forgetting in neural networks},
+	volume={114},
+	ISSN={1091-6490},
+	url={http://dx.doi.org/10.1073/pnas.1611835114},
+	DOI={10.1073/pnas.1611835114},
+	number={13},
+	journal={Proceedings of the National Academy of Sciences},
+	publisher={Proceedings of the National Academy of Sciences},
+	author={Kirkpatrick, James and Pascanu, Razvan and Rabinowitz, Neil and Veness, Joel and Desjardins, Guillaume and Rusu, Andrei A. and Milan, Kieran and Quan, John and Ramalho, Tiago and Grabska-Barwinska, Agnieszka and Hassabis, Demis and Clopath, Claudia and Kumaran, Dharshan and Hadsell, Raia},
+	year={2017},
+	month=mar, pages={3521–3526} }
+
+
+@article{DBLP:journals/corr/abs-2009-11997,
+	author       = {Yizhou Huang and
+	Kevin Xie and
+	Homanga Bharadhwaj and
+	Florian Shkurti},
+	title        = {Continual Model-Based Reinforcement Learning with Hypernetworks},
+	journal      = {CoRR},
+	volume       = {abs/2009.11997},
+	year         = {2020},
+	url          = {https://arxiv.org/abs/2009.11997},
+	eprinttype    = {arXiv},
+	eprint       = {2009.11997},
+	timestamp    = {Wed, 30 Sep 2020 16:16:22 +0200},
+	biburl       = {https://dblp.org/rec/journals/corr/abs-2009-11997.bib},
+	bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Optimizer Algorithms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% not used in the work but but could be extended by
+@article{KesharAdamGeneralization,
+	author    = {Nitish Shirish Keskar and
+	Richard Socher},
+	title     = {Improving Generalization Performance by Switching from Adam to {SGD}},
+	journal   = {CoRR},
+	volume    = {abs/1712.07628},
+	year      = {2017},
+	url       = {http://arxiv.org/abs/1712.07628},
+	eprinttype = {arXiv},
+	eprint    = {1712.07628},
+	timestamp = {Mon, 13 Aug 2018 16:48:22 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1712-07628.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+% adam
+@misc{kingma2017adam,
+title={Adam: A Method for Stochastic Optimization}, 
+author={Diederik P. Kingma and Jimmy Ba},
+year={2017},
+eprint={1412.6980},
+archivePrefix={arXiv},
+primaryClass={cs.LG}
+}
+
+% rmsprop -> there is no paper
+@misc{hinton2012rmsprop,
+	title={Lecture 6.5-RMSprop: Divide the gradient by a running average of its recent magnitude}, 
+	author={Tijmen Tieleman and Geoffrey Hinton},
+	year={2012},
+	url={http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf}
+}
+
+% implementations from pytorch
+@incollection{pyTorch,
+	title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+	author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+	booktitle = {Advances in Neural Information Processing Systems 32},
+	pages = {8024--8035},
+	year = {2019},
+	publisher = {Curran Associates, Inc.},
+	url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+%SGD -> Rosenblatt
+@article{rosenblatt1958perceptron,
+	title={The perceptron: a probabilistic model for information storage and organization in the brain.},
+	author={Rosenblatt, Frank},
+	journal={Psychological review},
+	volume={65},
+	number={6},
+	pages={386},
+	year={1958},
+	publisher={American Psychological Association}
+}
+
+% rprop -> rmsprop is based on this optimizer
+@INPROCEEDINGS{riedmillerRprop,
+	author={Riedmiller, M. and Braun, H.},
+	booktitle={IEEE International Conference on Neural Networks}, 
+	title={A direct adaptive method for faster backpropagation learning: the RPROP algorithm}, 
+	year={1993},
+	volume={},
+	number={},
+	pages={586-591 vol.1},
+	doi={10.1109/ICNN.1993.298623}}
+
+% adagrad
+@article{JMLR:v12:duchi11a,
+	author  = {John Duchi and Elad Hazan and Yoram Singer},
+	title   = {Adaptive Subgradient Methods for Online Learning and Stochastic Optimization},
+	journal = {Journal of Machine Learning Research},
+	year    = {2011},
+	volume  = {12},
+	number  = {61},
+	pages   = {2121--2159},
+	url     = {http://jmlr.org/papers/v12/duchi11a.html}
+}
+
+% review of popular optimizers
+@misc{ruder2017overview,
+	title={An overview of gradient descent optimization algorithms}, 
+	author={Sebastian Ruder},
+	year={2017},
+	eprint={1609.04747},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   ordinary differential equations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% node paper
+@misc{chen2019neural,
+title={Neural Ordinary Differential Equations}, 
+author={Ricky T. Q. Chen and Yulia Rubanova and Jesse Bettencourt and David Duvenaud},
+year={2019},
+eprint={1806.07366},
+archivePrefix={arXiv},
+primaryClass={cs.LG}
+}
+
+%LSDDM sayantan
+@misc{auddy2023scalable,
+	title={Scalable and Efficient Continual Learning from Demonstration via Hypernetwork-generated Stable Dynamics Model}, 
+	author={Sayantan Auddy and Jakob Hollenstein and Matteo Saveriano and Antonio Rodríguez-Sánchez and Justus Piater},
+	year={2023},
+	eprint={2311.03600},
+	archivePrefix={arXiv},
+	primaryClass={cs.RO}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   LfD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% survey about recent movements in LfD
+% types of teaching (kinestetic teaching, teleoperation, passive operation)
+@article{recentAdvancesLfD,
+	author = {Ravichandar, Harish and Polydoros, Athanasios S. and Chernova, Sonia and Billard, Aude},
+	title = {Recent Advances in Robot Learning from Demonstration},
+	journal = {Annual Review of Control, Robotics, and Autonomous Systems},
+	volume = {3},
+	number = {1},
+	pages = {297-330},
+	year = {2020},
+	doi = {10.1146/annurev-control-100819-063206},
+	URL = {
+	https://doi.org/10.1146/annurev-control-100819-063206
+	},
+	eprint = {
+	https://doi.org/10.1146/annurev-control-100819-063206
+	},
+	abstract = { In the context of robotics and automation, learning from demonstration (LfD) is the paradigm in which robots acquire new skills by learning to imitate an expert. The choice of LfD over other robot learning methods is compelling when ideal behavior can be neither easily scripted (as is done in traditional robot programming) nor easily defined as an optimization problem, but can be demonstrated. While there have been multiple surveys of this field in the past, there is a need for a new one given the considerable growth in the number of publications in recent years. This review aims to provide an overview of the collection of machine-learning methods used to enable a robot to learn from and imitate a teacher. We focus on recent advancements in the field and present an updated taxonomy and characterization of existing methods. We also discuss mature and emerging application areas for LfD and highlight the significant challenges that remain to be overcome both in theory and in practice. }
+}
+
+% imitation Flow -> dynamic flows 
+@article{iFlow,
+	author       = {Julen Urain and
+	Michele Ginesi and
+	Davide Tateo and
+	Jan Peters},
+	title        = {ImitationFlow: Learning Deep Stable Stochastic Dynamic Systems by
+	Normalizing Flows},
+	journal      = {CoRR},
+	volume       = {abs/2010.13129},
+	year         = {2020},
+	url          = {https://arxiv.org/abs/2010.13129},
+	eprinttype    = {arXiv},
+	eprint       = {2010.13129},
+	timestamp    = {Mon, 02 Nov 2020 18:17:09 +0100},
+	biburl       = {https://dblp.org/rec/journals/corr/abs-2010-13129.bib},
+	bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+% book introducing lfd
+@Inbook{Billard2016,
+	author="Billard, Aude G.
+	and Calinon, Sylvain
+	and Dillmann, R{\"u}diger",
+	title="Learning from Humans",
+	bookTitle="Springer Handbook of Robotics",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="1995--2014",
+	abstract="This chapter surveys the main approaches developed to date to endow robots with the ability to learn from human guidance. The field is best known as robot programming by demonstration, robot learning from/by demonstration, apprenticeship learning and imitation learning. We start with a brief historical overview of the field. We then summarize the various approaches taken to solve four main questions: when, what, who and when to imitate. We emphasize the importance of choosing well the interface and the channels used to convey the demonstrations, with an eye on interfaces providing force control and force feedback. We then review algorithmic approaches to model skills individually and as a compound and algorithms that combine learning from human guidance with reinforcement learning. We close with a look on the use of language to guide teaching and a list of open issues.",
+	isbn="978-3-319-32552-1",
+	doi="10.1007/978-3-319-32552-1_74",
+	url="https://doi.org/10.1007/978-3-319-32552-1_74"
+}
+
+% gmm and gmr for traj
+@article{herschDynamicSystem,
+	author = {Hersch, Micha and Guenter, Florent and Calinon, Sylvain and Billard, Aude},
+	year = {2008},
+	month = {01},
+	pages = {1463-1467},
+	title = {Dynamical System Modulation for Robot Learning via Kinesthetic Demonstrations.},
+	volume = {24},
+	journal = {IEEE Transactions on Robotics}
+}
+
+% learning dynamical system from set of demonstrations and LASA
+@article{LearningStableDynamicalSystemsGMM,
+	author = {Khansari Zadeh, Seyed Mohammad and Billard, Aude},
+	year = {2011},
+	month = {01},
+	pages = {},
+	title = {Learning Stable Non-Linear Dynamical Systems with Gaussian Mixture Models},
+	volume = {27},
+	journal = {IEEE Trans. Robot}
+}
+
+% use set of differential equations to have a pertubation stable control policy
+@INPROCEEDINGS{ijspeertmovementimitation,
+	author={Ijspeert, A.J. and Nakanishi, J. and Schaal, S.},
+	booktitle={Proceedings 2002 IEEE International Conference on Robotics and Automation (Cat. No.02CH37292)}, 
+	title={Movement imitation with nonlinear dynamical systems in humanoid robots}, 
+	year={2002},
+	volume={2},
+	number={},
+	pages={1398-1403 vol.2},
+	doi={10.1109/ROBOT.2002.1014739}}
+
+
+@inproceedings{LSDDM_Kolter,
+	author = {Kolter, J. Zico and Manek, Gaurav},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+	pages = {},
+	publisher = {Curran Associates, Inc.},
+	title = {Learning Stable Deep Dynamics Models},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/0a4bbceda17a6253386bc9eb45240e25-Paper.pdf},
+	volume = {32},
+	year = {2019}
+}
+
+% learns lyaponov function 
+@InProceedings{pmlr-v70-amos17b,
+	title = 	 {Input Convex Neural Networks},
+	author =       {Brandon Amos and Lei Xu and J. Zico Kolter},
+	booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+	pages = 	 {146--155},
+	year = 	 {2017},
+	editor = 	 {Precup, Doina and Teh, Yee Whye},
+	volume = 	 {70},
+	series = 	 {Proceedings of Machine Learning Research},
+	month = 	 {06--11 Aug},
+	publisher =    {PMLR},
+	pdf = 	 {http://proceedings.mlr.press/v70/amos17b/amos17b.pdf},
+	url = 	 {https://proceedings.mlr.press/v70/amos17b.html},
+	abstract = 	 {This paper presents the input convex neural network architecture. These are scalar-valued (potentially deep) neural networks with constraints on the network parameters such that the output of the network is a convex function of (some of) the inputs. The networks allow for efficient inference via optimization over some inputs to the network given others, and can be applied to settings including structured prediction, data imputation, reinforcement learning, and others. In this paper we lay the basic groundwork for these models, proposing methods for inference, optimization and learning, and analyze their representational power. We show that many existing neural network architectures can be made input-convex with a minor modification, and develop specialized optimization algorithms tailored to this setting. Finally, we highlight the performance of the methods on multi-label prediction, image completion, and reinforcement learning problems, where we show improvement over the existing state of the art in many cases.}
+}
+
+
+@InProceedings{pmlr-v80-heinonen18a,
+	title = 	 {Learning unknown {ODE} models with {G}aussian processes},
+	author =       {Heinonen, Markus and Yildiz, Cagatay and Mannerstr{\"o}m, Henrik and Intosalmi, Jukka and L{\"a}hdesm{\"a}ki, Harri},
+	booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+	pages = 	 {1959--1968},
+	year = 	 {2018},
+	editor = 	 {Dy, Jennifer and Krause, Andreas},
+	volume = 	 {80},
+	series = 	 {Proceedings of Machine Learning Research},
+	month = 	 {10--15 Jul},
+	publisher =    {PMLR},
+	pdf = 	 {http://proceedings.mlr.press/v80/heinonen18a/heinonen18a.pdf},
+	url = 	 {https://proceedings.mlr.press/v80/heinonen18a.html},
+	abstract = 	 {In conventional ODE modelling coefficients of an equation driving the system state forward in time are estimated. However, for many complex systems it is practically impossible to determine the equations or interactions governing the underlying dynamics. In these settings, parametric ODE model cannot be formulated. Here, we overcome this issue by introducing a novel paradigm of nonparametric ODE modelling that can learn the underlying dynamics of arbitrary continuous-time systems without prior knowledge. We propose to learn non-linear, unknown differential functions from state observations using Gaussian process vector fields within the exact ODE formalism. We demonstrate the model’s capabilities to infer dynamics from sparse data and to simulate the system forward into future.}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Metrics
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -> measures frechet, DTW
+@article{similarityMeasuresJekel,
+	author = {Jekel, Charles and Venter, Gerhard and Venter, Martin and Stander, Nielen and Haftka, Raphael},
+	year = {2019},
+	month = {05},
+	pages = {},
+	title = {Similarity measures for identifying material parameters from hysteresis loops using inverse analysis},
+	volume = {12},
+	journal = {International Journal of Material Forming},
+	doi = {10.1007/s12289-018-1421-8}
+}
+
+% quaternion error
+@INPROCEEDINGS{dynamicPrimitives,
+	author={Ude, Aleš and Nemec, Bojan and Petrić, Tadej and Morimoto, Jun},
+	booktitle={2014 IEEE International Conference on Robotics and Automation (ICRA)}, 
+	title={Orientation in Cartesian space dynamic movement primitives}, 
+	year={2014},
+	volume={},
+	number={},
+	pages={2997-3004},
+	abstract={Dynamic movement primitives (DMPs) were proposed as an efficient way for learning and control of complex robot behaviors. They can be used to represent point-to-point and periodic movements and can be applied in Cartesian or in joint space. One problem that arises when DMPs are used to define control policies in Cartesian space is that there exists no minimal, singularity-free representation of orientation. In this paper we show how dynamic movement primitives can be defined for non minimal, singularity free representations of orientation, such as rotation matrices and quaternions. All of the advantages of DMPs, including ease of learning, the ability to include coupling terms, and scale and temporal invariance, can be adopted in our formulation. We have also proposed a new phase stopping mechanism to ensure full movement reproduction in case of perturbations.},
+	keywords={},
+	doi={10.1109/ICRA.2014.6907291},
+	ISSN={1050-4729},
+	month={May},}
+
+% quaternion error
+@inproceedings{mergingPositionOrientation,
+	author = {Saveriano, Matteo and Franzel, Felix and Lee, Dongheui},
+	title = {Merging Position and Orientation Motion Primitives},
+	year = {2019},
+	publisher = {IEEE Press},
+	url = {https://doi.org/10.1109/ICRA.2019.8793786},
+	doi = {10.1109/ICRA.2019.8793786},
+	abstract = {In this paper, we focus on generating complex robotic trajectories by merging sequential motion primitives. A robotic trajectory is a time series of positions and orientations ending at a desired target. Hence, we first discuss the generation of converging pose trajectories via dynamical systems, providing a rigorous stability analysis. Then, we present approaches to merge motion primitives which represent both the position and the orientation part of the motion. Developed approaches preserve the shape of each learned movement and allow for continuous transitions among succeeding motion primitives. Presented methodologies are theoretically described and experimentally evaluated, showing that it is possible to generate a smooth pose trajectory out of multiple motion primitives.},
+	booktitle = {2019 International Conference on Robotics and Automation (ICRA)},
+	pages = {7041–7047},
+	numpages = {7},
+	location = {Montreal, QC, Canada}
+}
+
+% CL metrics
+@misc{díazrodríguez2018dont,
+	title={Don't forget, there is more than forgetting: new metrics for Continual Learning}, 
+	author={Natalia Díaz-Rodríguez and Vincenzo Lomonaco and David Filliat and Davide Maltoni},
+	year={2018},
+	eprint={1810.13166},
+	archivePrefix={arXiv},
+	primaryClass={cs.AI}
+}
